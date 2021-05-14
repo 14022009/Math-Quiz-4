@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Math Quiz Game!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="game_page.css">
+</head>
+
+<body>
+    <div class="username">
+        <h1 id="player1_name"></h1><span style="font-size: 40px;" id="player1_score"></span>
+        <br>
+        <h1 id="player2_name"></h1><span style="font-size: 40px;" id="p2">0</span>
+    </div>
+    <div class="container">
+        <center style="position: absolute; left: 230px; top: 260px; font-size: 20px;">
+            <h2 id="player_question"></h2>
+            <h2 id="player_answer"></h2>
+            <div id="output" class="col-lg-6"> </div>
+            <br>
+            <br>
+            <h2 class="n1_text">Number 1</h2>
+            <input type="text" id="number1" class="" placeholder="Number 1" maxlength="12">
+            <br>
+            <h2 class="n2_text">Number 2</h2>
+            <input type="text" id="number2" class="" placeholder="Number 2" maxlength="12">
+            <br>
+            <button onclick="send()" class="btn btn-success"
+                style="width: 200px; height: 50px; left: 220px; top: 368px; border-radius: 1px 30px; position: absolute; font-size: 30px; text-align: center;">Send</button>
+            <br>
+            <h3 class="ngh">Note: please do not enter a number more than twelve digit<br>You can see the correct answer
+                in console</h3>
+
+        </center>
+    </div>
+    <script src="game_page.js"></script>
+    <script async src="https://drv.tw/inc/wd.js"></script>
+</body>
+
+</html>
